@@ -15,8 +15,13 @@ for i in range(1, 6):
 
     multiply = num1 * num2
 
-    answer = int(input("Your answer: "))
-    print("Your answer:" + str(answer))
+    while True:
+        try:
+            answer = int(input("Your answer: "))
+            print("Your answer:" + str(answer))
+            break  # Break the loop if the input is valid
+        except ValueError:
+            print("Invalid input. Please enter a number.")
 
     def is_equal(a, b):
         return a == b
