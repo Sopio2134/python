@@ -8,6 +8,7 @@ Define the Function
 Create the apply_operation function with the following signature:
 
 def apply_operation(numbers, operation):
+
     """
     Apply the given operation to each element in the list of numbers.
     
